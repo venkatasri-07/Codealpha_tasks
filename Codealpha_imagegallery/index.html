@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Image Gallery</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>Responsive Image Gallery</h1>
+
+<div class="gallery">
+
+    <img src="images/132745.jpg" onclick="openImage(this.src)">
+    <img src="images/crysanthamum.jpg" onclick="openImage(this.src)">
+    <img src="images/jasmi.jpg" onclick="openImage(this.src)">
+    <img src="images/inline.jpg" onclick="openImage(this.src)">
+    <img src="images/tulip.jpg" onclick="openImage(this.src)">
+    <img src="images/pinkflowers.jpg" onclick="openImage(this.src)">
+    <img src="images/colorful.jpg" onclick="openImage(this.src)">
+    <img src="images/white.jpg" onclick="openImage(this.src)">
+
+</div>
+
+<div id="lightbox">
+
+    <span id="close" onclick="closeImage()">&times;</span>
+
+    <button id="prev" onclick="prevImage()">❮</button>
+
+    <img id="lightboxImg">
+
+    <button id="next" onclick="nextImage()">❯</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
